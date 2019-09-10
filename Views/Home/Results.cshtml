@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Survey Results";
+}
+
+<div class="jumbotron">
+    <h1>Dojo Survey</h1>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-12">
+        <p>Name: @ViewBag.Thing.Name</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <p>Favorite Language: @ViewBag.Thing.Language</p>
+    </div>
+    <div class="col-sm-6">
+        <p>Location: @ViewBag.Thing.Location</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <p>Comment:</p>
+        <pre>@ViewBag.Thing.Comment</pre>
+    </div>
+</div>
+
+<a href="/" class="btn btn-info">Back</a>

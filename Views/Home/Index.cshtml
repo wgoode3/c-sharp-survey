@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Dojo Survey</h1>
+</div>
+
+<form action="/process" method="post">
+    <div class="row">
+        <div class="form-group col-sm-12">
+            <label>Name:</label>
+            <input type="text" name="Name" placeholder="Your name:" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Favorite Language:</label>
+                <select name="Language" class="form-control">
+                    <option>C#</option>
+                    <option>Python</option>
+                    <option>JavaScript</option>
+                    <option>Ruby</option>
+                    <option>C++</option>
+                    <option>Java</option>
+                    <option>Go</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Location:</label>
+                <select name="Location" class="form-control">
+                    <option>Arlington, VA</option>
+                    <option>San Diego, CA</option>
+                    <option>Seattle, WA</option>
+                    <option>Key West, FL</option>
+                    <option>Honolulu, HI</option>
+                    <option>Kyoto, JP</option>
+                    <option>Barcelona, SP</option>
+                    <option>Dubai, UAE</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label>Comment:</label>
+                <textarea name="Comment" placeholder="Your comment:" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary" />
+</form>
